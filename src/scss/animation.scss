@@ -1,0 +1,44 @@
+@use './variables.scss';
+
+.wrapper{
+  position: absolute;
+  white-space: nowrap;
+  top: 10px;
+  left: -15px;
+  height: 52px;
+}
+
+.wrapper h1 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // letter-spacing: 0.1rem;
+  // text-align: center;
+  // overflow: hidden;
+  height: 52px;
+}
+
+.wrapper span{
+  height: 52px;
+}
+
+.wrapper h1 span.cursor {
+  display: inline-block;
+  background-color: #FCBE5A;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.wrapper h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #FCBE5A; }
+  49% { background-color: #FCBE5A; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #FCBE5A; }
+}

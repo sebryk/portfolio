@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./scss/style.scss">
+  <script src="./js/index.js" defer></script>
+  <title>Sergei Brykalov - Web Developer</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="header__nav nav">
+        <a href="#home" class="nav__logo">SB</a>
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#about" class="nav__list-link">About</a></li>
+          <li class="nav__list-item"><a href="#projects" class="nav__list-link">Projects</a></li>
+          <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__hero" id="hero">
+        <div class="header__hero-wrapper">
+          <picture>
+            <source srcset="./images/hero.jpeg" type="image/jpeg">
+            <source srcset="./images/hero.webp" type="image/webp">
+            <img class="header__hero-img" src="./images/hero.webp" alt="Frontal picture of Sergei Brykalov">
+          </picture>
+          <div class="header__hero-content">
+            <div class="wrapper">
+              <h1><span class="typed-text header__hero-title"></span><span class="cursor">&nbsp;</span></h1>
+            </div>
+            <p class="header__hero-text">
+              I am a frontend developer.<br />
+              My passion is creating visually appealing and user-friendly websites and apps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="about">
+      <h2 class="about__title">About</h2>
+      <div class="about__terminal terminal">
+        <span class="terminal__circle terminal__circle--red"></span>
+        <span class="terminal__circle terminal__circle--yellow"></span>
+        <span class="terminal__circle terminal__circle--green"></span>
+        <div class="terminal__info">
+          <h2 class="terminal__title">> my.currentLocation</h2>
+          <p class="terminal__text terminal__text-location">“Saint - Petersburg, RU”</p>
+          <h2 class="terminal__title">> my.contactInfo</h2>
+          <p class="terminal__text">
+            [
+            <a class="terminal__text-link" href="#">gitHub</a>,
+            <a class="terminal__text-link" href="#">LinkedIn</a>,
+            <a class="terminal__text-link" href="#">brykalov@info.site</a>,
+            ]
+          </p>
+          <h2 class="terminal__title">> my.resume</h2>
+          <p class="terminal__text">
+            <a class="terminal__text-link terminal__text-link--resume" href="#">brykalovs.pdf</a>
+          </p>
+          <h2 class="terminal__title">> my.skills</h2>
+          <p class="terminal__text">[
+            <span class="terminal__text-skills">“Html”, “Css”, “Sass”, “Tailwind”, “JavaScript”, “React”</span>
+            ]
+          </p>
+        </div>
+      </div>
+    </main>
+    <section class="projects">
+      <h2 class="projects__title">Projects</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-wrapper">
+              <a href="#" class="swiper-slide-link">
+                <h3 class="swiper-slide-title">Neon Memory Cards</h3>
+                <picture>
+                  <source srcset="./images/portfolio/neon-memory-cards.webp">
+                  <source srcset="./images/portfolio/neon-memory-cards.jpg">
+                  <img class="swiper-slide-img" src="./images/portfolio/neon-memory-cards.webp"
+                    alt="Preview Image of Neon Memory Cards App">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="./images/portfolio/wavetake.webp">
+                  <source srcset="./images/portfolio/wavetake.jpg">
+                  <img class="swiper-slide-img" src="./images/portfolio/wavetake.webp"
+                    alt="Preview Image of Wavetake Site">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="./images/portfolio/weather.webp">
+                  <source srcset="./images/portfolio/weather.jpg">
+                  <img class="swiper-slide-img" src="./images/portfolio/weather.webp"
+                    alt="Preview Image of Weather React App">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-wrapper">
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="./images/portfolio/quickdrawing.webp">
+                  <source srcset="./images/portfolio/quickdrawing.jpg">
+                  <img class="swiper-slide-img" src="./images/portfolio/quickdrawing.webp"
+                    alt="Preview Image of Quickdrawing React App">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="./images/portfolio/locus.webp">
+                  <source srcset="./images/portfolio/locus.jpg">
+                  <img class="swiper-slide-img" src="./images/portfolio/locus.webp" alt="Preview Image of Locus Site ">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="./images/portfolio/drum-sampler.webp">
+                  <source srcset="./images/portfolio/drum-sampler.jpg">
+                  <img class="swiper-slide-img" src="./images/portfolio/drum-sampler.webp"
+                    alt="Preview Image of Drum Sampler App">
+                </picture>
+              </a>
+            </div>
+          </div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
