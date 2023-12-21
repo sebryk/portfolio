@@ -1,0 +1,19 @@
+# Build output
+dist/
+build/
+
+# Temporary files
+*.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Compiled binary files
+*.exe
+*.dll
+*.so
+
+# Dependency directories
+node_modules/
+bower_components/
