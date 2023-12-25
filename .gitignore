@@ -1,6 +1,6 @@
 # Build output
 # dist/
-src/
+# src/
 
 # Temporary files
 *.DS_Store
