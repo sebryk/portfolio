@@ -1,5 +1,5 @@
 # Build output
-# dist/
+dist/
 build/
 
 # Temporary files
@@ -17,5 +17,3 @@ Thumbs.db
 # Dependency directories
 node_modules/
 bower_components/
-
-.parcel-cache/
