@@ -1,12 +1,13 @@
 # Build output
-dist/
-build/
+# dist/
+src/
 
 # Temporary files
 *.DS_Store
 Thumbs.db
 
-# Log files
+# Ignore Node.js files
+node_modules/
 *.log
 
 # Compiled binary files
@@ -14,6 +15,5 @@ Thumbs.db
 *.dll
 *.so
 
-# Dependency directories
-node_modules/
-bower_components/
+# Ignore Mac/OSX files
+.DS_Store
