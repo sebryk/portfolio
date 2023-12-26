@@ -198,6 +198,56 @@ body {
   }
 }
 
+.contacts{
+  text-align: center;
+  padding-top: 47px;
+  border: 2px solid var(--gray-color);
+  border-top: none;
+  &__title{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 65px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 92px;
+  }
+  &__link{
+    transition: 0.3s;
+    &:hover{
+      opacity: 0.8;
+    }
+    &-title{
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    &-svg{
+      margin-bottom: 12px;
+    }
+    margin-bottom: 83px;
+  }
+}
+
+.footer{
+  height: 71px;
+  border: 2px solid var(--gray-color);
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 37px;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  &__title{
+    font-weight: 400;
+  }
+}
 
 
 
