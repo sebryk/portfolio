@@ -1,1 +1,176 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><link rel="stylesheet" href="index.css"><script src="index.js" defer></script><title>Sergei Brykalov - Web Developer</title></head><body> <div class="container"> <header class="header"> <nav class="header__nav nav"> <a href="#home" class="nav__logo">SB</a> <ul class="nav__list"> <li class="nav__list-item"><a href="#about" class="nav__list-link">About</a></li> <li class="nav__list-item"><a href="#projects" class="nav__list-link">Projects</a></li> <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Contact</a></li> </ul> </nav> <div class="header__hero" id="hero"> <div class="header__hero-wrapper"> <picture> <source srcset="hero.jpeg" type="image/jpeg"> <source srcset="hero.webp" type="image/webp"> <img class="header__hero-img" src="hero.webp" alt="Frontal picture of Sergei Brykalov"> </picture> <div class="header__hero-content"> <div class="wrapper"> <h1><span class="header__hero-title typed-text"></span><span class="cursor">&nbsp;</span></h1> </div> <p class="header__hero-text"> I am a frontend developer.<br> My passion is creating visually appealing and user-friendly websites and apps. </p> </div> </div> </div> </header> <main class="about"> <h2 class="about__title">About</h2> <div class="about__terminal terminal"> <span class="terminal__circle terminal__circle--red"></span> <span class="terminal__circle terminal__circle--yellow"></span> <span class="terminal__circle terminal__circle--green"></span> <div class="terminal__info"> <h2 class="terminal__title">> my.currentLocation</h2> <p class="terminal__text terminal__text-location">“Saint - Petersburg, RU”</p> <h2 class="terminal__title">> my.contactInfo</h2> <p class="terminal__text"> [ <a class="terminal__text-link" href="#">gitHub</a>, <a class="terminal__text-link" href="#">LinkedIn</a>, <a class="terminal__text-link" href="#">brykalov@info.site</a>, ] </p> <h2 class="terminal__title">> my.resume</h2> <p class="terminal__text"> <a class="terminal__text-link terminal__text-link--resume" href="#">brykalovs.pdf</a> </p> <h2 class="terminal__title">> my.skills</h2> <p class="terminal__text">[ <span class="terminal__text-skills">“Html”, “Css”, “Sass”, “Tailwind”, “JavaScript”, “React”</span> ] </p> </div> </div> </main> <section class="projects"> <h2 class="projects__title">Projects</h2>  <div class="swiper">  <div class="swiper-wrapper">  <div class="swiper-slide"> <div class="swiper-slide-wrapper"> <a href="#" class="swiper-slide-link"> <picture> <source srcset="neon-memory-cards.webp"> <source srcset="neon-memory-cards.jpeg"> <img class="swiper-slide-img" src="neon-memory-cards.webp" alt="Preview Image of Neon Memory Cards App"> </picture> </a> <a href="#" class="swiper-slide-link"> <picture> <source srcset="wavetake.webp"> <source srcset="wavetake.jpeg"> <img class="swiper-slide-img" src="wavetake.webp" alt="Preview Image of Wavetake Site"> </picture> </a> <a href="#" class="swiper-slide-link"> <picture> <source srcset="weather.webp"> <source srcset="weather.jpeg"> <img class="swiper-slide-img" src="weather.webp" alt="Preview Image of Weather React App"> </picture> </a> </div> </div> <div class="swiper-slide"> <div class="swiper-slide-wrapper"> <a href="#" class="swiper-slide-link"> <picture> <source srcset="quickdrawing.webp"> <source srcset="quickdrawing.jpeg"> <img class="swiper-slide-img" src="quickdrawing.webp" alt="Preview Image of Quickdrawing React App"> </picture> </a> <a href="#" class="swiper-slide-link"> <picture> <source srcset="locus.webp"> <source srcset="locus.jpeg"> <img class="swiper-slide-img" src="locus.webp" alt="Preview Image of Locus Site "> </picture> </a> <a href="#" class="swiper-slide-link"> <picture> <source srcset="drum-sampler.webp"> <source srcset="drum-sampler.jpeg"> <img class="swiper-slide-img" src="drum-sampler.webp" alt="Preview Image of Drum Sampler App"> </picture> </a> </div> </div> ... </div> <div class="swiper-pagination"></div> <div class="swiper-button-prev"></div> <div class="swiper-button-next"></div> </div> </section> <section class="contacts"> <h2 class="contacts__title"> Contacts </h2> <div class="contacts__wrapper"> <a href="#" class="contacts__link"> <svg class="contacts__link-svg" width="63" height="61" fill="none"><path d="M31.5 0C14.096 0 0 13.994 0 31.271c0 13.838 9.017 25.526 21.538 29.67 1.575.273 2.166-.665 2.166-1.486 0-.743-.04-3.206-.04-5.824-7.914 1.446-9.962-1.916-10.592-3.675-.354-.899-1.89-3.674-3.228-4.417-1.103-.586-2.678-2.033-.04-2.072 2.481-.039 4.253 2.267 4.844 3.206 2.835 4.73 7.363 3.4 9.174 2.58.276-2.033 1.102-3.401 2.008-4.183-7.009-.782-14.332-3.479-14.332-15.44 0-3.401 1.22-6.215 3.228-8.404-.315-.782-1.417-3.988.315-8.287 0 0 2.638-.821 8.663 3.205a29.43 29.43 0 0 1 7.875-1.055c2.677 0 5.355.351 7.875 1.055 6.024-4.065 8.662-3.205 8.662-3.205 1.733 4.3.63 7.505.315 8.287 2.008 2.189 3.229 4.964 3.229 8.404 0 12-7.363 14.658-14.372 15.44 1.142.977 2.126 2.853 2.126 5.785 0 4.183-.039 7.545-.039 8.6 0 .82.59 1.798 2.166 1.485a31.531 31.531 0 0 0 15.537-11.407A31.164 31.164 0 0 0 63 31.271C63 13.994 48.904 0 31.5 0Z" fill="#2D2D2D"/></svg> <h4 class="contacts__link-title">GitHub</h4> </a> <a href="#" class="contacts__link"> <svg class="contacts__link-svg" width="62" height="62" fill="none"><path d="M0 4.44C0 1.989 2.038 0 4.553 0h52.894C59.962 0 62 1.988 62 4.44v53.12c0 2.452-2.038 4.44-4.553 4.44H4.553C2.038 62 0 60.012 0 57.56V4.44Zm19.154 47.462V23.905H9.85v27.997h9.304Zm-4.65-31.822c3.243 0 5.262-2.146 5.262-4.836-.058-2.747-2.015-4.836-5.2-4.836S9.3 12.501 9.3 15.244c0 2.69 2.019 4.836 5.142 4.836h.062Zm19.019 31.822V36.266c0-.837.062-1.674.31-2.27.67-1.67 2.2-3.403 4.774-3.403 3.367 0 4.712 2.565 4.712 6.332v14.977h9.303V35.844c0-8.603-4.587-12.602-10.71-12.602-4.937 0-7.15 2.713-8.39 4.623v.097h-.061c.02-.032.04-.065.062-.097v-3.96h-9.3c.116 2.627 0 27.997 0 27.997h9.3Z" fill="#2D2D2D"/></svg> <h4 class="contacts__link-title">LinkedIn</h4> </a> <a href="#" class="contacts__link"> <svg class="contacts__link-svg" width="80" height="62" fill="none"><path d="M70 0H10a10.081 10.081 0 0 0-7.068 2.892A9.807 9.807 0 0 0 0 9.864v42.272a9.807 9.807 0 0 0 2.932 6.972A10.081 10.081 0 0 0 10 62h60a10.081 10.081 0 0 0 7.068-2.892A9.806 9.806 0 0 0 80 52.136V9.864a9.806 9.806 0 0 0-2.932-6.972A10.081 10.081 0 0 0 70 0Zm-2.532 16.316L41.754 36.043a2.883 2.883 0 0 1-3.508 0L12.532 16.316a2.832 2.832 0 0 1-.746-.83 2.793 2.793 0 0 1-.29-2.157c.1-.36.27-.697.502-.992.233-.295.522-.541.852-.725a2.885 2.885 0 0 1 3.19.254L40 30.248l23.96-18.382a2.887 2.887 0 0 1 3.978.52 2.79 2.79 0 0 1-.47 3.93Z" fill="#2D2D2D"/></svg> <h4 class="contacts__link-title">Mail</h4> </a> </div> </section> <footer class="footer"> <h4 class="footer__title"> Sergei Brykalov </h4> <p class="footer__date"> 2003 </p> </footer> </div> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="/index.f60cc020.css">
+  <script src="/index.c01ddaac.js" defer=""></script>
+  <title>Sergei Brykalov - Web Developer</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="header__nav nav">
+        <a href="#home" class="nav__logo">SB</a>
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#about" class="nav__list-link">About</a></li>
+          <li class="nav__list-item"><a href="#projects" class="nav__list-link">Projects</a></li>
+          <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__hero" id="hero">
+        <div class="header__hero-wrapper">
+          <picture>
+            <source srcset="/hero.9716c9ea.jpeg" type="image/jpeg">
+            <source srcset="/hero.2467903d.webp" type="image/webp">
+            <img class="header__hero-img" src="/hero.2467903d.webp" alt="Frontal picture of Sergei Brykalov">
+          </picture>
+          <div class="header__hero-content">
+            <div class="wrapper">
+              <h1><span class="typed-text header__hero-title"></span><span class="cursor">&nbsp;</span></h1>
+            </div>
+            <p class="header__hero-text">
+              I am a frontend developer.<br>
+              My passion is creating visually appealing and user-friendly websites and apps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="about">
+      <h2 class="about__title">About</h2>
+      <div class="about__terminal terminal">
+        <span class="terminal__circle terminal__circle--red"></span>
+        <span class="terminal__circle terminal__circle--yellow"></span>
+        <span class="terminal__circle terminal__circle--green"></span>
+        <div class="terminal__info">
+          <h2 class="terminal__title">> my.currentLocation</h2>
+          <p class="terminal__text terminal__text-location">“Saint - Petersburg, RU”</p>
+          <h2 class="terminal__title">> my.contactInfo</h2>
+          <p class="terminal__text">
+            [
+            <a class="terminal__text-link" href="#">gitHub</a>,
+            <a class="terminal__text-link" href="#">LinkedIn</a>,
+            <a class="terminal__text-link" href="#">brykalov@info.site</a>,
+            ]
+          </p>
+          <h2 class="terminal__title">> my.resume</h2>
+          <p class="terminal__text">
+            <a class="terminal__text-link terminal__text-link--resume" href="#">brykalovs.pdf</a>
+          </p>
+          <h2 class="terminal__title">> my.skills</h2>
+          <p class="terminal__text">[
+            <span class="terminal__text-skills">“Html”, “Css”, “Sass”, “Tailwind”, “JavaScript”, “React”</span>
+            ]
+          </p>
+        </div>
+      </div>
+    </main>
+    <section class="projects">
+      <h2 class="projects__title">Projects</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-wrapper">
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="/neon-memory-cards.b171021b.webp">
+                  <source srcset="/neon-memory-cards.829093bd.jpeg">
+                  <img class="swiper-slide-img" src="/neon-memory-cards.b171021b.webp" alt="Preview Image of Neon Memory Cards App">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="/wavetake.db8ca858.webp">
+                  <source srcset="/wavetake.b6d0abba.jpeg">
+                  <img class="swiper-slide-img" src="/wavetake.db8ca858.webp" alt="Preview Image of Wavetake Site">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="/weather.3b547ceb.webp">
+                  <source srcset="/weather.2cb514e9.jpeg">
+                  <img class="swiper-slide-img" src="/weather.3b547ceb.webp" alt="Preview Image of Weather React App">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-wrapper">
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="/quickdrawing.3c2bd1ec.webp">
+                  <source srcset="/quickdrawing.b0282fd1.jpeg">
+                  <img class="swiper-slide-img" src="/quickdrawing.3c2bd1ec.webp" alt="Preview Image of Quickdrawing React App">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="/locus.3863988a.webp">
+                  <source srcset="/locus.377c8e68.jpeg">
+                  <img class="swiper-slide-img" src="/locus.3863988a.webp" alt="Preview Image of Locus Site ">
+                </picture>
+              </a>
+              <a href="#" class="swiper-slide-link">
+                <picture>
+                  <source srcset="/drum-sampler.6bcc4b5b.webp">
+                  <source srcset="/drum-sampler.14de95cf.jpeg">
+                  <img class="swiper-slide-img" src="/drum-sampler.6bcc4b5b.webp" alt="Preview Image of Drum Sampler App">
+                </picture>
+              </a>
+            </div>
+          </div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">
+        Contacts
+      </h2>
+      <div class="contacts__wrapper">
+        <a href="#" class="contacts__link">
+          <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewbox="0 0 63 61" fill="none">
+            <path d="M31.5 0C14.0962 0 0 13.994 0 31.2715C0 45.1091 9.01687 56.7968 21.5381 60.9403C23.1131 61.2139 23.7038 60.2757 23.7038 59.4549C23.7038 58.7122 23.6644 56.2495 23.6644 53.6306C15.75 55.0769 13.7025 51.7152 13.0725 49.9562C12.7181 49.0571 11.1825 46.2818 9.84375 45.5391C8.74125 44.9527 7.16625 43.5064 9.80437 43.4673C12.285 43.4282 14.0569 45.7345 14.6475 46.6727C17.4825 51.4025 22.0106 50.0734 23.8219 49.2526C24.0975 47.2199 24.9244 45.8518 25.83 45.07C18.8212 44.2882 11.4975 41.591 11.4975 29.6297C11.4975 26.2289 12.7181 23.4145 14.7262 21.2255C14.4113 20.4437 13.3088 17.2384 15.0412 12.9386C15.0412 12.9386 17.6794 12.1177 23.7038 16.1439C26.2237 15.4403 28.9013 15.0885 31.5788 15.0885C34.2563 15.0885 36.9338 15.4403 39.4538 16.1439C45.4781 12.0786 48.1163 12.9386 48.1163 12.9386C49.8488 17.2384 48.7463 20.4437 48.4313 21.2255C50.4394 23.4145 51.66 26.1898 51.66 29.6297C51.66 41.6301 44.2969 44.2882 37.2881 45.07C38.43 46.0472 39.4144 47.9235 39.4144 50.8552C39.4144 55.0378 39.375 58.3995 39.375 59.4549C39.375 60.2757 39.9656 61.253 41.5406 60.9403C47.7943 58.845 53.2285 54.8554 57.0781 49.533C60.9277 44.2107 62.9989 37.8238 63 31.2715C63 13.994 48.9038 0 31.5 0Z" fill="#2D2D2D"></path>
+          </svg>
+          <h4 class="contacts__link-title">GitHub</h4>
+        </a>
+        <a href="#" class="contacts__link">
+          <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewbox="0 0 62 62" fill="none">
+            <path d="M0 4.44075C0 1.98787 2.03825 0 4.55312 0H57.4469C59.9618 0 62 1.98787 62 4.44075V57.5592C62 60.0121 59.9618 62 57.4469 62H4.55312C2.03825 62 0 60.0121 0 57.5592V4.44075ZM19.1541 51.9017V23.9049H9.85025V51.9017H19.1541ZM14.5041 20.0802C17.7475 20.0802 19.7664 17.9335 19.7664 15.2443C19.7083 12.4969 17.7514 10.4083 14.5661 10.4083C11.3809 10.4083 9.3 12.5007 9.3 15.2443C9.3 17.9335 11.3189 20.0802 14.4421 20.0802H14.5041ZM33.5226 51.9017V36.2661C33.5226 35.4291 33.5846 34.5921 33.8326 33.9954C34.503 32.3252 36.0336 30.5931 38.6066 30.5931C41.974 30.5931 43.3186 33.1584 43.3186 36.9249V51.9017H52.6225V35.8438C52.6225 27.2412 48.0345 23.2423 41.912 23.2423C36.9753 23.2423 34.7626 25.9548 33.5226 27.8651V27.962H33.4606C33.4812 27.9297 33.5019 27.8974 33.5226 27.8651V23.9049H24.2226C24.3389 26.5321 24.2226 51.9017 24.2226 51.9017H33.5226Z" fill="#2D2D2D"></path>
+          </svg>
+          <h4 class="contacts__link-title">LinkedIn</h4>
+        </a>
+        <a href="#" class="contacts__link">
+          <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="80" height="62" viewbox="0 0 80 62" fill="none">
+            <path d="M70 0H10C7.34871 0.00279744 4.80681 1.0429 2.93207 2.89208C1.05732 4.74127 0.00283612 7.2485 0 9.86364V52.1364C0.00283612 54.7515 1.05732 57.2587 2.93207 59.1079C4.80681 60.9571 7.34871 61.9972 10 62H70C72.6513 61.9972 75.1932 60.9571 77.0679 59.1079C78.9427 57.2587 79.9972 54.7515 80 52.1364V9.86364C79.9972 7.2485 78.9427 4.74127 77.0679 2.89208C75.1932 1.0429 72.6513 0.00279744 70 0ZM67.4679 16.3155L41.7536 36.0428C41.2521 36.4273 40.6351 36.636 40 36.636C39.3649 36.636 38.7479 36.4273 38.2464 36.0428L12.5321 16.3155C12.23 16.0905 11.9763 15.8084 11.7856 15.4858C11.5949 15.1632 11.4712 14.8064 11.4215 14.4362C11.3719 14.066 11.3973 13.6898 11.4963 13.3294C11.5953 12.969 11.766 12.6315 11.9984 12.3367C12.2308 12.0419 12.5202 11.7956 12.85 11.6121C13.1797 11.4286 13.5431 11.3116 13.9191 11.2678C14.2951 11.224 14.6761 11.2544 15.0401 11.3572C15.4041 11.4599 15.7437 11.633 16.0393 11.8663L40 30.2479L63.9607 11.8663C64.5599 11.42 65.313 11.2243 66.0573 11.3214C66.8016 11.4186 67.4773 11.8008 67.9381 12.3854C68.399 12.9701 68.608 13.7101 68.52 14.4456C68.432 15.181 68.054 15.8528 67.4679 16.3155Z" fill="#2D2D2D"></path>
+          </svg>
+          <h4 class="contacts__link-title">Mail</h4>
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <h4 class="footer__title">
+        Sergei Brykalov
+      </h4>
+      <p class="footer__date">
+        2004
+      </p>
+    </footer>
+  </div>
+<script src="/portfolio.507e4c78.js"></script></body>
+
+</html>
