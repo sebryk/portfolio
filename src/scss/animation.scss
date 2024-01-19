@@ -6,6 +6,20 @@
   top: 10px;
   left: -15px;
   height: 52px;
+  @media (max-width:820px) {
+    top: 20px;
+  }
+  @media (max-width:740px) {
+    top: 30px;
+    left: 60px;
+  }
+  @media (max-width:545px) {
+    top: -25px;
+    left: 44px;
+  }
+  @media (max-width:380px) {
+    left: 14px;
+  }
 }
 
 .wrapper h1 {
@@ -23,6 +37,9 @@
 
 .wrapper span{
   height: 52px;
+  @media (max-width:820px) {
+    height: 40px;
+  }
 }
 
 .wrapper h1 span.cursor {
@@ -31,6 +48,8 @@
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
+
+
 }
 .wrapper h1 span.cursor.typing {
   animation: none;

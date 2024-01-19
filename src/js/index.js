@@ -40,7 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const swiper = new Swiper('.swiper', {
   loop: false,
-
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  breakpoints: {
+    670: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -51,3 +62,33 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const burgerMenu = () => {
+  const burger = document.querySelector('.icon');
+  const navMenu = document.querySelector('.nav__menu');
+  const mobileMenu = document.querySelector('.nav__list');
+  const menuLinks = document.querySelectorAll('.nav__list-item');
+  const body = document.querySelector('body');
+
+  const toggleBurger = () => {
+    mobileMenu.classList.toggle('nav__list--active');
+    burger.classList.toggle('icon--active');
+    body.classList.toggle('body__lock');
+    // navMenu.classList.toggle('nav__menu--shown');
+  };
+
+  const closeBurger = () => {
+    mobileMenu.classList.remove('nav__list--active');
+    burger.classList.remove('icon--active');
+    body.classList.remove('body__lock');
+    // navMenu.classList.remove('nav__menu--shown');
+  };
+
+  burger.addEventListener('click', toggleBurger);
+
+  // navMenu.addEventListener('click', closeBurger);
+
+  menuLinks.forEach(el => el.addEventListener('click', closeBurger));
+};
+
+burgerMenu();
