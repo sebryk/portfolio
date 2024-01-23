@@ -16,22 +16,24 @@
 
 <body>
   <div class="container">
-    <header class="header">
-      <nav class="header__nav nav">
-        <a href="#home" class="nav__logo">SB</a>
-        <ul class="nav__list">
-          <li class="nav__list-item"><a href="#about" class="nav__list-link">About</a></li>
-          <li class="nav__list-item"><a href="#projects" class="nav__list-link">Projects</a>
-          </li>
-          <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Contact</a>
-          </li>
-        </ul>
-        <div class="nav-icon icon">
-          <span class="icon__stripe"></span>
-          <span class="icon__stripe"></span>
-          <span class="icon__stripe"></span>
-        </div>
-      </nav>
+    <header id="header" class="header">
+      <div class="header__fixed-top">
+        <nav class="header__nav nav">
+          <a href="#header" class="nav__logo">SB</a>
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="#about" class="nav__list-link">About</a></li>
+            <li class="nav__list-item"><a href="#projects" class="nav__list-link">Projects</a>
+            </li>
+            <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-icon icon">
+            <span class="icon__stripe"></span>
+            <span class="icon__stripe"></span>
+            <span class="icon__stripe"></span>
+          </div>
+        </nav>
+      </div>
       <div class="header__hero" id="hero">
         <div class="header__hero-wrapper">
           <picture>
@@ -52,7 +54,7 @@
       </div>
     </header>
 
-    <main class="about">
+    <main id="about" class="about">
       <h2 class="about__title">About</h2>
       <div class="about__terminal terminal">
         <span class="terminal__circle terminal__circle--red"></span>
@@ -71,7 +73,8 @@
           </p>
           <h2 class="terminal__title">> my.resume</h2>
           <p class="terminal__text">
-            <a class="terminal__text-link terminal__text-link--resume" href="#">brykalovs.pdf</a>
+            <a class="terminal__text-link terminal__text-link--resume" href="./brykalovs_cv.pdf"
+              download>brykalovs_cv.pdf</a>
           </p>
           <h2 class="terminal__title">> my.skills</h2>
           <p class="terminal__text">[
@@ -81,7 +84,7 @@
         </div>
       </div>
     </main>
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2 class="projects__title">Projects</h2>
       <!-- Slider main container -->
       <div class="swiper">
@@ -91,20 +94,20 @@
           <div class="swiper-slide">
             <a href="#" class="swiper-slide-link">
               <picture>
-                <source srcset="./images/portfolio/neon-memory-cards.webp">
-                <source srcset="./images/portfolio/neon-memory-cards.jpg">
-                <img class="swiper-slide-img" src="./images/portfolio/neon-memory-cards.webp"
-                  alt="Preview Image of Neon Memory Cards App">
+                <source srcset="./images/portfolio/wavetake.webp">
+                <source srcset="./images/portfolio/wavetake.jpg">
+                <img class="swiper-slide-img" src="./images/portfolio/wavetake.webp"
+                  alt="Preview Image of Wavetake Site">
               </picture>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#" class="swiper-slide-link">
               <picture>
-                <source srcset="./images/portfolio/wavetake.webp">
-                <source srcset="./images/portfolio/wavetake.jpg">
-                <img class="swiper-slide-img" src="./images/portfolio/wavetake.webp"
-                  alt="Preview Image of Wavetake Site">
+                <source srcset="./images/portfolio/neon-memory-cards.webp">
+                <source srcset="./images/portfolio/neon-memory-cards.jpg">
+                <img class="swiper-slide-img" src="./images/portfolio/neon-memory-cards.webp"
+                  alt="Preview Image of Neon Memory Cards App">
               </picture>
             </a>
           </div>
@@ -154,12 +157,12 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <h2 class="contacts__title">
         Contacts
       </h2>
       <div class="contacts__wrapper">
-        <a href="#" class="contacts__link">
+        <a href="//github.com/sebryk" class="contacts__link" target="_blank">
           <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewBox="0 0 63 61"
             fill="none">
             <path
@@ -177,7 +180,7 @@
           </svg>
           <h4 class="contacts__link-title">LinkedIn</h4>
         </a>
-        <a href="#" class="contacts__link">
+        <a href="mailto:info@brykalov.dev" class="contacts__link">
           <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="80" height="62" viewBox="0 0 80 62"
             fill="none">
             <path

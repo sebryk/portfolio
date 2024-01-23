@@ -4,6 +4,10 @@
 @use './swiper.scss';
 @use './burger.scss';
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--light-yellow-color);
   font-family: 'Epilogue', sans-serif;
@@ -23,25 +27,39 @@ body {
 }
 
 .header{
+  &__fixed-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    padding-inline: 15px;
+  }
   &__nav{
+    max-width: 1220px;
+    min-width: 290px;
+    margin: auto;
     height: 106px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 40px;
     border: var(--gray-color) 2px solid;
+    background-color: var(--light-yellow-color);
   }
   &__hero{
-    height: 531px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 95px ;
     gap: 100px;
     border: 2px solid var(--gray-color);
     border-top: none;
     padding-inline: 20px;
     @media (max-width:740px) {
-      height: 680px;
+      height: 780px;
+      padding-top: 125px;
     }
     &-wrapper{
       width: 822px;
@@ -188,6 +206,7 @@ body {
   border-top: none;
   text-align: center;
   padding-top: 48px;
+  scroll-margin-top: 106px;
   padding-inline: 20px;
   &__container{
     border-top: none;
@@ -283,6 +302,7 @@ body {
   border-top: none;
   text-align: center;
   padding-top: 48px;
+  scroll-margin-top: 106px;
   &__title{
     font-size: 34px;
     font-weight: 400;
@@ -294,6 +314,7 @@ body {
 .contacts{
   text-align: center;
   padding-top: 47px;
+  scroll-margin-top: 106px;
   border: 2px solid var(--gray-color);
   border-top: none;
   padding-inline: 20px;
