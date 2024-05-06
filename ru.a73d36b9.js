@@ -176,6 +176,34 @@ var swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   }
 });
+var showLink = function showLink() {
+  var swiperSlideImgs = document.querySelectorAll('.swiper-slide-img');
+  var swiperSlideBtns = document.querySelectorAll('.swiper-slide-btn');
+  swiperSlideImgs.forEach(function (img, index) {
+    if (swiperSlideBtns[index] && window.innerWidth > 900) {
+      var btn = swiperSlideBtns[index];
+      img.addEventListener('mouseover', function () {
+        btn.style.opacity = '1';
+        img.style.boxShadow = '0px 6px 6px 0px rgba(0, 0, 0, 0.35)';
+        img.style.transform = 'translateY(-6px)';
+      });
+      btn.addEventListener('mouseover', function () {
+        btn.style.opacity = '1';
+        img.style.boxShadow = '0px 6px 6px 0px rgba(0, 0, 0, 0.35)';
+        img.style.transform = 'translateY(-6px)';
+      });
+      img.addEventListener('mouseout', function () {
+        btn.style.opacity = '0';
+        img.style.boxShadow = 'none';
+        img.style.transform = 'none';
+      });
+      btn.addEventListener('mouseout', function () {
+        btn.style.opacity = '1';
+      });
+    }
+  });
+};
+showLink();
 var burgerMenu = function burgerMenu() {
   var burger = document.querySelector('.icon');
   var mobileMenu = document.querySelector('.nav__wrapper');
