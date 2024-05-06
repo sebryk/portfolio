@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
 
-const textArray = ['Sergei Brykalov'];
+const textArray = ['Сергей Брыкалов'];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 5000;
@@ -86,9 +86,7 @@ const showLink = () => {
         img.style.transform = 'none';
       });
       btn.addEventListener('mouseout', () => {
-        btn.style.opacity = '0';
-        img.style.boxShadow = 'none';
-        img.style.transform = 'none';
+        btn.style.opacity = '1';
       });
     }
   });

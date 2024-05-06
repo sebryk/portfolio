@@ -3,8 +3,10 @@
   "source": "src/*.html",
   "scripts": {
     "start": "parcel src/*.html --no-source-maps --no-cache",
-    "build": "parcel build src/*.html --no-content-hash --no-source-maps --no-cache --public-url ./",
-    "clean": "rimraf dist"
+    "build": "parcel build src/*.html --no-content-hash --no-source-maps --no-cache --public-url ./ --no-minify",
+    "clean": "rimraf dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "targets": {
     "app": {
@@ -25,8 +27,10 @@
     "@gatsbyjs/parcel-namer-relative-to-cwd": "^2.12.1",
     "@mischnic/parcel-namer-preserve-structure": "^0.2.0",
     "@parcel/transformer-sass": "^2.8.3",
+    "gh-pages": "^6.1.1",
     "normalize.css": "^8.0.1",
     "parcel": "latest",
+    "parcel-bundler": "^1.12.5",
     "parcel-namer-hashless": "^1.0.5",
     "parcel-namer-rewrite": "^2.10.3-rc.2",
     "parcel-plugin-custom-dist-structure": "^1.1.18",

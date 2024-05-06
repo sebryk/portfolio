@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
-    href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@200;300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="icon" type="svg" href="./images/favicon.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./scss/style.scss">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <script src="./js/index.js" defer></script>
-  <title>Sergei Brykalov - Web Developer</title>
+  <script src="./js/ru.js" defer></script>
+  <title>Сергей Брыкалов - Веб-Разработчик</title>
 </head>
 
-<body>
-  <div class="container ">
+<body style="font-family: Nunito Sans, sans-serif;">
+  <div class="container">
     <header id="header" class="header">
       <div class="header__fixed-top">
         <nav class="header__nav nav">
-          <a href="#header" class="nav__logo">SB</a>
+          <a href="#header" class="nav__logo">CБ</a>
           <div class="nav__wrapper">
             <ul class="nav__list">
-              <li class="nav__list-item"><a href="#about" class="nav__list-link">About</a></li>
-              <li class="nav__list-item"><a href="#projects" class="nav__list-link">Projects</a>
+              <li class="nav__list-item"><a href="#about" class="nav__list-link">Обо мне</a></li>
+              <li class="nav__list-item"><a href="#projects" class="nav__list-link">Проекты</a>
               </li>
-              <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Contact</a>
+              <li class="nav__list-item"><a href="#contacts" class="nav__list-link">Контакты</a>
               </li>
             </ul>
           </div>
           <div class="nav__language">
-            <p class="nav__language-curr">EN</p>
-            <a class="nav__language-link" href="./ru.html">RU</a>
+            <p class="nav__language-curr">RU</p>
+            <a class="nav__language-link" href="./index.html">EN</a>
           </div>
           <div class="nav-icon icon">
             <span class="icon__stripe"></span>
@@ -48,11 +48,12 @@
           </picture>
           <div class="header__hero-content">
             <div class="wrapper">
-              <h1><span class="typed-text header__hero-title"></span><span class="cursor">&nbsp;</span></h1>
+              <h1 style="font-family: Roboto, sans-serif; font-weight: 500;"><span
+                  class="typed-text header__hero-title"></span><span class="cursor">&nbsp;</span></h1>
             </div>
             <p class="header__hero-text">
-              I am a frontend developer.<br />
-              My passion is creating visually appealing and user-friendly websites and apps.
+              Я фронтенд-разработчик.<br />
+              Создаю функциональные и визуально привлекательные <nobr>веб-приложения</nobr>.
             </p>
           </div>
         </div>
@@ -60,14 +61,14 @@
     </header>
 
     <main id="about" class="about">
-      <h2 class="about__title">About</h2>
+      <h2 class="about__title">Обо мне</h2>
       <div class="about__terminal terminal">
         <span class="terminal__circle terminal__circle--red"></span>
         <span class="terminal__circle terminal__circle--yellow"></span>
         <span class="terminal__circle terminal__circle--green"></span>
         <div class="terminal__info">
           <h2 class="terminal__title">> my.currentLocation</h2>
-          <p class="terminal__text terminal__text-location">"Saint - Petersburg, RU"</p>
+          <p class="terminal__text terminal__text-location">“Saint - Petersburg, RU”</p>
           <h2 class="terminal__title">> my.contactInfo</h2>
           <p class="terminal__text">
             [
@@ -78,7 +79,7 @@
           </p>
           <h2 class="terminal__title">> my.resume</h2>
           <p class="terminal__text">
-            <a class="terminal__text-link terminal__text-link--resume" href="./brykalov_sergei_cv.pdf"
+            <a class="terminal__text-link terminal__text-link--resume" href="./брыкалов_св_резюме.pdf"
               download>brykalov_sergei_cv.pdf</a>
           </p>
           <h2 class="terminal__title">> my.skills</h2>
@@ -90,7 +91,7 @@
       </div>
     </main>
     <section id="projects" class="projects">
-      <h2 class="projects__title">Projects</h2>
+      <h2 class="projects__title">Проекты</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -172,10 +173,10 @@
     </section>
     <section id="contacts" class="contacts">
       <h2 class="contacts__title">
-        Contacts
+        Контакты
       </h2>
       <div class="contacts__wrapper">
-        <a href="https://github.com/sebryk" class="contacts__link" target="_blank" rel="noopener">
+        <a href="//github.com/sebryk" class="contacts__link" target="_blank">
           <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewBox="0 0 63 61"
             fill="none">
             <path
@@ -206,7 +207,7 @@
     </section>
     <footer class="footer">
       <h4 class="footer__title">
-        Sergei Brykalov
+        Сергей Брыкалов
       </h4>
       <p class="footer__date">
         2024
