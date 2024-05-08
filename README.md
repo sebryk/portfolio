@@ -11,4 +11,4 @@
 
 ## Link
 
-sebryk.github.io/portfolio/
+http://sebryk.github.io/portfolio/
