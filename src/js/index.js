@@ -63,38 +63,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const showLink = () => {
-  const swiperSlideImgs = document.querySelectorAll('.swiper-slide-img');
-  const swiperSlideBtns = document.querySelectorAll('.swiper-slide-btn');
-
-  swiperSlideImgs.forEach((img, index) => {
-    if (swiperSlideBtns[index] && window.innerWidth > 900) {
-      const btn = swiperSlideBtns[index];
-      img.addEventListener('mouseover', () => {
-        btn.style.opacity = '1';
-        img.style.boxShadow = '0px 6px 6px 0px rgba(0, 0, 0, 0.35)';
-        img.style.transform = 'translateY(-6px)';
-      });
-      btn.addEventListener('mouseover', () => {
-        btn.style.opacity = '1';
-        img.style.boxShadow = '0px 6px 6px 0px rgba(0, 0, 0, 0.35)';
-        img.style.transform = 'translateY(-6px)';
-      });
-      img.addEventListener('mouseout', () => {
-        btn.style.opacity = '0';
-        img.style.boxShadow = 'none';
-        img.style.transform = 'none';
-      });
-      btn.addEventListener('mouseout', () => {
-        btn.style.opacity = '0';
-        img.style.boxShadow = 'none';
-        img.style.transform = 'none';
-      });
-    }
-  });
-};
-showLink();
-
 const burgerMenu = () => {
   const burger = document.querySelector('.icon');
   const mobileMenu = document.querySelector('.nav__wrapper');
@@ -141,3 +109,41 @@ const moveElementBasedOnWindowSize = () => {
 moveElementBasedOnWindowSize();
 
 window.addEventListener('resize', moveElementBasedOnWindowSize);
+
+const showModal = () => {
+  const swiperSlides = document.querySelectorAll('.swiper-slide-img');
+  const modal = document.querySelector('.modal');
+  const modalContent = document.querySelector('.modal__content');
+  const modalClose = document.querySelector('.modal__close-btn');
+
+  const closeModal = () => {
+    modalContent.classList.remove('modal__content--active');
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }, 300);
+  };
+
+  const openModal = () => {
+    modal.style.display = 'flex';
+    setTimeout(() => {
+      modal.style.opacity = '1';
+      modalContent.classList.add('modal__content--active');
+      document.body.style.overflow = 'hidden';
+    }, 50);
+  };
+
+  swiperSlides.forEach(el => {
+    el.addEventListener('click', openModal);
+  });
+  modalClose.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+};
+
+showModal();

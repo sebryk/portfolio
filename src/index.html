@@ -41,7 +41,7 @@
           </div>
         </nav>
       </div>
-      <div class="header__hero" id="hero">
+      <div class="header__hero header__hero--en" id="hero">
         <div class="header__hero-wrapper">
           <picture>
             <img class="header__hero-img" src="./images/hero.svg" alt="Frontal picture of Sergei Brykalov">
@@ -71,9 +71,12 @@
           <h2 class="terminal__title">> my.contactInfo</h2>
           <p class="terminal__text">
             [
-            <a class="terminal__text-link" href="#">gitHub</a>,
-            <a class="terminal__text-link" href="#">LinkedIn</a>,
-            <a class="terminal__text-link" href="#">brykalov@info.site</a>
+            <a class="terminal__text-link" href="https://github.com/sebryk" target="_blank" rel="noopener">github</a>,
+            <a class="terminal__text-link" href="https://www.linkedin.com/in/sergei-brykalov-63a521234/" target="_blank"
+              rel="noopener">linkedin</a>,
+            <a class="terminal__text-link" href="mailto:contact@brykalov.dev" target="_blank" rel="noopener">mail</a>,
+            <a class="terminal__text-link" href="https://t.me/sebryk" target="_blank" rel="noopener">telegram</a>,
+            <a class="terminal__text-link" href="https://wa.me/+79811930733" target="_blank" rel="noopener">whatsapp</a>
             ]
           </p>
           <h2 class="terminal__title">> my.resume</h2>
@@ -83,7 +86,7 @@
           </p>
           <h2 class="terminal__title">> my.skills</h2>
           <p class="terminal__text">[
-            <span class="terminal__text-skills">"React", "Next.js", "TypeScript", "Redux Toolkit", "Sass"</span>
+            <span class="terminal__text-skills">"react", next.js", "typescript", "redux toolkit", "sass"</span>
             ]
           </p>
         </div>
@@ -94,17 +97,16 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="https://sebryk.github.io/quickdrawing-react-app/#/" class="swiper-slide-link" target="_blank"
-              rel="noopener">
+            <div>
               <picture>
                 <source srcset="./images/portfolio/quickdrawing.webp">
                 <source srcset="./images/portfolio/quickdrawing.jpg">
                 <img class="swiper-slide-img" src="./images/portfolio/quickdrawing.webp"
                   alt="Preview Image of Quickdrawing React App">
               </picture>
-              <a href="https://github.com/sebryk/quickdrawing-react-app" class="swiper-slide-btn"
-                target="_blank">GitHub</a>
-            </a>
+              <!-- <a href="https://github.com/sebryk/quickdrawing-react-app" class="swiper-slide-btn" target="_blank"
+                rel="noopener">GitHub</a> -->
+            </div>
           </div>
           <div class="swiper-slide">
             <a href="https://wavetake.com" class="swiper-slide-link" target="_blank" rel="noopener">
@@ -114,7 +116,8 @@
                 <img class="swiper-slide-img" src="./images/portfolio/wavetake.webp"
                   alt="Preview Image of Wavetake Site">
               </picture>
-              <a href="https://github.com/sebryk/wavetake" class="swiper-slide-btn" target="_blank">GitHub</a>
+              <!-- <a href="https://github.com/sebryk/wavetake" class="swiper-slide-btn" target="_blank"
+                rel="noopener">GitHub</a> -->
             </a>
           </div>
           <div class="swiper-slide">
@@ -126,8 +129,8 @@
                 <img class="swiper-slide-img" src="./images/portfolio/neon-memory-cards.webp"
                   alt="Preview Image of Neon Memory Cards App">
               </picture>
-              <a href="https://github.com/sebryk/memory-cards-react-app" class="swiper-slide-btn"
-                target="_blank">GitHub</a>
+              <!-- <a href="https://github.com/sebryk/memory-cards-react-app" class="swiper-slide-btn" target="_blank"
+                rel="noopener">GitHub</a> -->
             </a>
           </div>
           <div class="swiper-slide">
@@ -139,7 +142,8 @@
                 <img class="swiper-slide-img" src="./images/portfolio/weather.webp"
                   alt="Preview Image of Weather React App">
               </picture>
-              <a href="https://github.com/sebryk/weather-react-app" class="swiper-slide-btn" target="_blank">GitHub</a>
+              <!-- <a href="https://github.com/sebryk/weather-react-app" class="swiper-slide-btn" target="_blank"
+                rel="noopener">GitHub</a> -->
             </a>
           </div>
           <div class="swiper-slide">
@@ -149,7 +153,8 @@
                 <source srcset="./images/portfolio/locus.jpg">
                 <img class="swiper-slide-img" src="./images/portfolio/locus.webp" alt="Preview Image of Locus Site ">
               </picture>
-              <a href="https://github.com/sebryk/locus" class="swiper-slide-btn" target="_blank">GitHub</a>
+              <!-- <a href="https://github.com/sebryk/locus" class="swiper-slide-btn" target="_blank"
+                rel="noopener">GitHub</a> -->
             </a>
           </div>
           <div class="swiper-slide">
@@ -160,7 +165,8 @@
                 <img class="swiper-slide-img" src="./images/portfolio/drum-sampler.webp"
                   alt="Preview Image of Drum Sampler App">
               </picture>
-              <a href="https://github.com/sebryk/drum_machine" class="swiper-slide-btn" target="_blank">GitHub</a>
+              <!-- <a href="https://github.com/sebryk/drum_machine" class="swiper-slide-btn" target="_blank"
+                rel="noopener">GitHub</a> -->
             </a>
           </div>
           ...
@@ -184,7 +190,8 @@
           </svg>
           <h4 class="contacts__link-title">GitHub</h4>
         </a>
-        <a href="#" class="contacts__link">
+        <a href="https://www.linkedin.com/in/sergei-brykalov-63a521234/" class="contacts__link" target="_blank"
+          rel="noopener">
           <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"
             fill="none">
             <path
@@ -193,7 +200,7 @@
           </svg>
           <h4 class="contacts__link-title">LinkedIn</h4>
         </a>
-        <a href="mailto:info@brykalov.dev" class="contacts__link">
+        <a href="mailto:contact@brykalov.dev" class="contacts__link">
           <svg class="contacts__link-svg" xmlns="http://www.w3.org/2000/svg" width="80" height="62" viewBox="0 0 80 62"
             fill="none">
             <path
@@ -212,6 +219,35 @@
         2024
       </p>
     </footer>
+  </div>
+  <div class="projects__modal modal">
+    <div class="modal__content">
+      <picture>
+        <source srcset="./images/portfolio/quickdrawing.webp">
+        <source srcset="./images/portfolio/quickdrawing.jpg">
+        <img class="modal__content-img" src="./images/portfolio/quickdrawing.webp"
+          alt="Preview Image of Quickdrawing React App">
+      </picture>
+      <div class="modal__content-block">
+        <h1 class="modal__content-title">Quickdrawing</h1>
+        <p class="modal__content-desc">Single page app prototype designed specifically for artists. Regardless of
+          your skill
+          level, whether you're a newbie or already proficient, this app allows users to create fast and dynamic
+          sketches from a vast library of high-quality images sourced from an external API. Available only for
+          tablets and desktops</p>
+        <p class="modal__content-stack">
+          <strong>Stack:</strong> React, TypeScript, Redux Toolkit, RTK Query, Firebase
+        </p>
+        <div>
+
+          <a href="https://sebryk.github.io/quickdrawing-react-app/#/" class="modal__content-link" target="_blank"
+            rel="noopener">Demo</a>
+          <a href="https://github.com/sebryk/drum_machine" class="modal__content-link" target="_blank"
+            rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="modal__close-btn">&#x2715;</div>
+    </div>
   </div>
 </body>
 

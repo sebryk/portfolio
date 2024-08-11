@@ -46,10 +46,11 @@
   border-radius: 20px;
   z-index: 100;
   transition: 0.3s;
-  // &:hover{
-  //   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.35);
-  //   transform: translateY(-6px);
-  // }
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.35);
+    transform: translateY(-6px);
+  }
   @media (max-width: 370px ) {
     width: 260px;
   }
@@ -68,30 +69,6 @@
 .swiper-button{
   position: absolute;
 }
-
-.swiper-slide-btn{
-  position: absolute;
-  bottom: 130px;
-  left: 37px;
-  right: 37px;
-  color: var(--light-gray-color);
-  font-weight: 500;
-  background-color: var(--gray-color);
-  padding-inline: 11px;
-  padding-block: 7px;
-  border-radius: 10px;
-  z-index: 10;
-  opacity: 0;
-  transition: 0.1s;
-  @media (max-width: 900px ) {
-    opacity: 1;
-  }
-}
-
-.swiper-slide-btn:hover{
-  opacity: 1;
-}
-
 
 .swiper-button-prev{
   color: var(--gray-color);
