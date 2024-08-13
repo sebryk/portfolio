@@ -16,9 +16,11 @@
 
   @media (max-width: 800px) {
     padding-top: 10px;
-    padding-bottom: unset;
+    padding-bottom: 10px;
   }
   &__content{
+    min-width: 320px;
+    margin: auto;
     position: relative;
     opacity: 0;
     width: 100%;
@@ -107,6 +109,9 @@
       border-radius: 10px;
       z-index: 10;
       transition: 0.2s;
+      &:first-child{
+        margin-bottom: 10px;
+      }
         &:hover{
           box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.35);
         }
