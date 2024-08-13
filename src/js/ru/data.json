@@ -1,0 +1,51 @@
+[
+  {
+    "id": "quickdrawing",
+    "title": "Quickdrawing",
+    "description": "Прототип одностраничного веб приложения, разработанный специально для художников. Независимо от уровня мастерства это приложение позволяет пользователям создавать скетчи на основе обширной библиотеки изображений высокого качества. Доступно для планшетов и настольных компьютеров.",
+    "stack": ["React", "TypeScript", "Redux Toolkit", "RTK Query", "Firebase"],
+    "demoLink": "https://sebryk.github.io/quickdrawing-react-app/#/",
+    "githubLink": "https://github.com/sebryk/drum_machine"
+  },
+  {
+    "id": "wavetake",
+    "title": "Wavetake",
+    "description": "Минималистичный сайт-портфолио компании музыкального производства и звука с встроенной галереей видеоработ и аудиоплеером.",
+    "stack": ["Html", "Scss", "JavaScript", "Firebase", "Parcel"],
+    "demoLink": "https://wavetake.com",
+    "githubLink": "https://github.com/sebryk/wavetake"
+  },
+  {
+    "id": "neon-memory-cards",
+    "title": "Neon memory cards",
+    "description": "Прототип одностраничного приложения, разработанный для изучения языка за счет использования возможностей интерактивных флэшкарт. Это приложение предлагает эффективный способ изучения новой лексики и фраз на разных языках, что делает его незаменимым инструментом для любителей иностранных языков и полиглотов.",
+    "stack": ["React",  "TypeScript", "Redux Toolkit", "Scss"],
+    "demoLink": "https://sebryk.github.io/memory-cards-react-app/",
+    "githubLink": "sebryk.github.io/memory-cards-react-app/"
+  },
+  {
+    "id": "weather",
+    "title": "Weather",
+    "description": "Интуитивно понятное и удобное одностраничное веб-приложение, предоставляющее информацию о погоде в режиме реального времени. Минималистичный дизайн демонстрирует текущий и недельный прогноз погоды в любой точки мира.",
+    "stack": ["React", "Css", "Vite"],
+    "demoLink": "https://sebryk.github.io/weather-react-app/",
+    "githubLink": "https://github.com/sebryk/weather-react-app"
+  },
+  {
+    "id": "locus",
+    "title": "Locus",
+    "description": "Простой одностраничный сайт с отзывчивым макетом и динамическим модальным окном авторизации.",
+    "stack": ["Html", "Css", "Javascript"],
+    "demoLink": "https://sebryk.github.io/locus/",
+    "githubLink": "https://github.com/sebryk/locus"
+  },
+  {
+    "id": "drum-sampler",
+    "title": "Drum sampler",
+    "description": "Эмуляция драм-машины с уникальным дизайном.",
+    "stack": ["Html", "Css", "Javascript"],
+    "demoLink": "https://sebryk.github.io/drum_machine/",
+    "githubLink": "https://github.com/sebryk/drum_machine"
+  }
+
+]
