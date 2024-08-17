@@ -58,7 +58,11 @@
 
 .swiper-pagination-bullet{
   background-color: var(--gray-color);
+  margin-inline: 8px !important;
+  width: 10px !important;
+  height: 10px !important;
 }
+
 .swiper-pagination-bullet-active{
   background-color: var(--gray-color);
 }
