@@ -1,6 +1,6 @@
 :root{
   --swiper-pagination-top: auto;
-  --swiper-pagination-bottom: 40px;
+  --swiper-pagination-bottom: 30px;
   --swiper-navigation-size: 30px;
 }
 .swiper {
@@ -21,6 +21,7 @@
 }
 
 .swiper-slide{
+  padding-top: 10px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -72,14 +73,14 @@
 
 .swiper-button-prev{
   color: var(--gray-color);
-  top: 490px;
+  top: 500px;
   @media (max-width: 370px ) {
     top: 440px;
   }
 }
 .swiper-button-next{
   color: var(--gray-color);
-  top: 490px;
+  top: 500px;
   @media (max-width: 370px ) {
     top: 440px;
   }
